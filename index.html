@@ -16,7 +16,7 @@
     <li><a href="#about">about</a></li>
     <li><a href="#skills">skills</a></li>
     <li><a href="#projects">projects</a></li>
-    <li><a href="#api-showcase">api</a></li>
+    <li><a href="#learning">hobbies</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
 </nav>
@@ -208,7 +208,7 @@
     <!-- FinSmart — Featured -->
     <div class="project-card featured reveal">
       <div class="project-screenshot">
-        <a href="#" target="_blank" class="slideshow">
+        <a class="slideshow">
           <div class="slideshow-track">
             <img src="assets/finsmart.png" alt="FinSmart">
             <img src="assets/finsmart1.png" alt="FinSmart">
@@ -254,7 +254,7 @@
     <!-- One More Tree -->
     <div class="project-card reveal">
       <div class="project-screenshot">
-        <a href="#" target="_blank" class="slideshow">
+        <a  class="slideshow">
           <div class="slideshow-track">
             <img src="assets/onemoretree.png" alt="One More Tree">
             <img src="assets/onemoretree1.png" alt="One More Tree">
@@ -335,73 +335,7 @@
   </div>
 </section>
 
-<hr class="divider">
 
-<section id="api-showcase">
-  <div class="inner">
-    <div class="section-label">Backend Showcase</div>
-    <h2 class="section-title">How the API Works</h2>
-
-    <div class="api-grid reveal">
-      <div>
-        <p style="color: var(--text2); font-size:14px; margin-bottom:24px; line-height:1.7;">
-          The FinSmart backend exposes a RESTful API built with FastAPI. Each endpoint handles one responsibility and returns structured JSON — no surprises.
-        </p>
-
-        <div class="api-endpoints">
-          <div class="api-endpoint active" data-endpoint="login">
-            <span class="method-badge post">POST</span>
-            <span class="endpoint-path">/auth/login</span>
-            <span class="endpoint-desc">Authentication</span>
-          </div>
-          <div class="api-endpoint" data-endpoint="persons">
-            <span class="method-badge get">GET</span>
-            <span class="endpoint-path">/persons</span>
-            <span class="endpoint-desc">List borrowers</span>
-          </div>
-          <div class="api-endpoint" data-endpoint="person_detail">
-            <span class="method-badge get">GET</span>
-            <span class="endpoint-path">/persons/{id}</span>
-            <span class="endpoint-desc">Borrower stats</span>
-          </div>
-          <div class="api-endpoint" data-endpoint="reports">
-            <span class="method-badge get">GET</span>
-            <span class="endpoint-path">/reports/summary</span>
-            <span class="endpoint-desc">Financial analytics</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="code-window">
-        <div class="code-titlebar">
-          <div class="code-dot" style="background:#ff6060"></div>
-          <div class="code-dot" style="background:#f6a623"></div>
-          <div class="code-dot" style="background:#39d353"></div>
-          <span class="code-filename">response.json — GET /persons/1</span>
-        </div>
-        <div class="code-body">
-<pre id="code-content"><span class="c-comment">// 200 OK</span>
-<span class="c-punct">{</span>
-  <span class="c-key">"id"</span><span class="c-punct">:</span> <span class="c-num">1</span><span class="c-punct">,</span>
-  <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"Karthik Raja"</span><span class="c-punct">,</span>
-  <span class="c-key">"given_amount"</span><span class="c-punct">:</span> <span class="c-num">25000.0</span><span class="c-punct">,</span>
-  <span class="c-key">"interest_amount"</span><span class="c-punct">:</span> <span class="c-num">12.0</span><span class="c-punct">,</span>
-  <span class="c-key">"status"</span><span class="c-punct">:</span> <span class="c-str">"active"</span><span class="c-punct">,</span>
-  <span class="c-key">"total_paid"</span><span class="c-punct">:</span> <span class="c-num">15000.0</span><span class="c-punct">,</span>
-  <span class="c-key">"outstanding"</span><span class="c-punct">:</span> <span class="c-num">12400.0</span><span class="c-punct">,</span>
-  <span class="c-key">"next_payment_date"</span><span class="c-punct">:</span> <span class="c-str">"2025-04-15"</span><span class="c-punct">,</span>
-  <span class="c-key">"risk"</span><span class="c-punct">:</span> <span class="c-punct">{</span>
-    <span class="c-key">"level"</span><span class="c-punct">:</span> <span class="c-str">"low"</span><span class="c-punct">,</span>
-    <span class="c-key">"score"</span><span class="c-punct">:</span> <span class="c-num">15</span>
-  <span class="c-punct">}</span>
-<span class="c-punct">}</span></pre>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider"> 
 
 
 <!-- HOBBIES -->
@@ -437,7 +371,6 @@
     </div>
 
   </div>
-</section>
 </section>
 
 <hr class="divider">

@@ -100,7 +100,18 @@ section {
   z-index: 1;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 40px;
+  padding: 80px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#projects {
+  min-height: auto;
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* ─── SECTION LABEL ─────────────────────────────── */
@@ -134,11 +145,7 @@ section {
 }
 
 hr.divider {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 0 40px;
-  position: relative;
-  z-index: 1;
+  display: none;
 }
 
 /* ─── HERO ──────────────────────────────────────── */
